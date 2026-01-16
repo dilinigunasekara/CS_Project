@@ -6,11 +6,11 @@
 }
 
 :root {
-    --primary-color: #4a64a0;
-    --secondary-color: #74b1f3;
-    --accent-color: #4ea2f6;
+    --primary-color: #067118;
+    --secondary-color: #8ee98e;
+    --accent-color: #38cb95;
     --text-dark: #2c2c2c;
-    --text-light: #18579a;
+    --text-light: #1abe2b;
     --white: #ffffff;
     --light-bg: #fafafa;
     --border-color: #e0e0e0;
@@ -102,7 +102,7 @@ body {
 }
 
 .register-btn {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
 }
 
