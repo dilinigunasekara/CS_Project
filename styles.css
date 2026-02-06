@@ -59,6 +59,7 @@ body {
     list-style: none;
     gap: 2rem;
     align-items: center;
+    text-decoration: none;
 }
 
 .nav-menu li a {
@@ -67,11 +68,13 @@ body {
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
+    text-decoration: none;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 .nav-menu li a.active::after {
@@ -82,6 +85,7 @@ body {
     width: 100%;
     height: 2px;
     background-color: var(--primary-color);
+    text-decoration: none;
 }
 
 
@@ -208,14 +212,23 @@ background-image: url("heropic.jpg");
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: rgba(100, 197, 21, 0.253);
+    color: rgb(50, 88, 52);
 }
 
 .btn-small {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
+     background-color: var(--primary-color);
+    color: var(--white);
 }
+
+.btn-small:hover {
+    background-color:grey;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3);
+}
+
 
 /* Section Styles */
 section {
@@ -253,7 +266,7 @@ section {
 }
 
 .product-card {
-    background-color: var(--white);
+    background-color: #44804d85;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -303,7 +316,7 @@ section {
 
 /* Benefits Section */
 .benefits {
-    background-color: var(--light-bg);
+    background-color: rgba(7, 83, 0, 0.705);
 }
 
 .benefits-grid {
@@ -315,7 +328,7 @@ section {
 .benefit-item {
     text-align: center;
     padding: 2rem;
-    background-color: var(--white);
+    background-color: rgb(235, 247, 235);
     border-radius: 15px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
@@ -379,8 +392,8 @@ section {
 
 /* Footer */
 .footer {
-    background-color: var(--text-dark);
-    color: var(--white);
+    background-color: rgb(21, 39, 26);
+    color: rgb(255, 255, 255);
     padding: 3rem 0 1rem;
 }
 
@@ -394,7 +407,7 @@ section {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: rgb(211, 241, 220);
 }
 
 .footer-section ul {
@@ -412,7 +425,7 @@ section {
 }
 
 .footer-section a:hover {
-    color: var(--primary-color);
+    color: rgb(134, 185, 156);
 }
 
 .footer-section p {
@@ -735,6 +748,7 @@ section {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
         gap: 1rem;
+        text-decoration: none;
     }
 
     .nav-menu.active {
