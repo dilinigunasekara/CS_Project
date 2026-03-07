@@ -11,7 +11,7 @@
     --accent-color: #4fd1816c;
     --text-dark: #2c2c2c;
     --text-light: #000000;
-    --white: #f4f5eb;
+    --white: #ffffe8;
     --White2: #6a8b67;
     --light-bg: #11420a;
     --border-color: #e0e0e0;
@@ -22,6 +22,15 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+
+
+
+    
+    background-image: url('pictures/background.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;      
+    background-attachment: fixed;
+ 
 }
 
 .container {
@@ -96,14 +105,14 @@ body {
 }
 
 .login-btn {
-    background-color: var(--secondary-color);
-    border: 2px solid var(--primary-color);
-    color: var(--secondary-color); 
+    background-color: rgba(54, 48, 36, 0.692);
+    border: 2px solid rgb(78, 72, 74);
+    color: rgb(255, 255, 255); 
 }
 
 .login-btn:hover {
-    background-color: var(--pimary-color);
-    color: var(--white);
+    background-color: rgba(228, 218, 208, 0.822);
+    color: rgb(0, 0, 0);
 }
 
 .register-btn {
@@ -143,6 +152,8 @@ background-image: url("pictures/heropic.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
 
 .hero-content {
     flex: 1;
@@ -256,7 +267,10 @@ section {
 
 /* Featured Products */
 .featured-products {
-    background-color: var(--white);
+   background-image: url('pictures/background.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;      
+    background-attachment: fixed;
 }
 
 .products-grid {
@@ -266,7 +280,7 @@ section {
 }
 
 .product-card {
-    background-color: #44804d85;
+    background-color: #faf9e0;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -316,7 +330,7 @@ section {
 
 /* Benefits Section */
 .benefits {
-    background-color: rgba(7, 83, 0, 0.705);
+    background-color: rgba(92, 119, 89, 0.705);
 }
 
 .benefits-grid {
@@ -366,7 +380,7 @@ section {
 }
 
 .testimonial-card {
-    background-color: var(--secondary-color);
+    background-color: rgb(88, 117, 95);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -790,4 +804,11 @@ section {
     .recipe-detail-info {
         padding: 2rem;
     }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
