@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coconut Honey Face Pack</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+   /* Page Background */
+
+.recipe-page{
+padding:120px 10% 80px 10%;
+background-color:#fdfaf6;
+background-image:url("https://i.pinimg.com/1200x/35/4b/6a/354b6aca385094b818d8cb26b8d7e603.jpg");
+background-size:1000px;
+position:relative;
+}
+
+.recipe-page::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/honeycomb.png");
+opacity:0.08;
+z-index:0;}
+/* Main Container */
+
+.recipe-container{
+position:relative;
+z-index:1;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+animation:fadeIn 1.2s ease;
+
+}
+
+/* Image Styling */
+
+.recipe-image{
+width:350px;
+height:350px;
+overflow:hidden;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+animation:fadeIn 1.2s ease;
+}
+.recipe-image{
+width:350px;
+height:350px;
+overflow:hidden;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+animation:fadeIn 1.2s ease;
+}
+
+.recipe-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:transform 0.5s ease;
+}
+
+/* Hover Zoom Effect */
+
+.recipe-image:hover img{
+transform:scale(1.1);
+}
+
+.recipe-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* Content */
+.recipe-content{
+flex:1;
+max-width:600px;
+}
+
+.recipe-content h2{
+font-size:36px;
+margin-bottom:15px;
+font-weight:700;
+color:#b89022;
+position:relative;
+display:inline-block;
+}
+
+/* Highlight Line Under Title */
+
+.recipe-content h2::after{
+content:"";
+display:block;
+width:70px;
+height:4px;
+background:linear-gradient(90deg,#cc7410,#daa925);
+margin-top:8px;
+border-radius:5px;
+}
+
+.recipe-content p{
+color:#0c0c0b;
+line-height:1.6;
+}
+
+/* Section Titles */
+
+.recipe-content h3{
+margin-top:25px;
+margin-bottom:10px;
+color:#b37b04;
+font-size:20px;
+border-left:4px solid #f1a210;
+padding-left:10px;
+}
+
+/* Lists */
+
+.recipe-content ul,
+.recipe-content ol{
+padding-left:20px;
+color:#555;
+}
+
+.recipe-content li{
+margin-bottom:8px;
+}
+
+/* Highlight Box */
+
+.benefits-box{
+background:#f7cc6f;
+padding:15px 20px;
+border-radius:8px;
+margin-top:10px;
+line-height:1.6;
+}
+
+/* Fade In Animation */
+
+@keyframes fadeIn{
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Floating Animation */
+
+.recipe-image{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+</style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html">HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="body.html">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+<!-- RECIPE CONTENT -->
+
+<section class="recipe-page">
+
+<div class="recipe-container">
+
+<div class="recipe-image">
+<img src="https://i.pinimg.com/1200x/34/d6/ce/34d6ceaee92540228c0fa719a1e6fe89.jpg" alt="Lemon Drink">
+</div>
+
+<div class="recipe-content">
+
+<h2>Lemon Drink for Brightening Skin</h2>
+
+<p>
+ Lemon is rich in vitamin C, antioxidants, and natural acids that help cleanse the body and support healthy skin. Drinking lemon water regularly helps remove toxins from the body, improve digestion, and keep the body hydrated.
+</p>
+
+<h3>Ingredients</h3>
+
+<ul>
+<li>1 tablespoon fresh Lemon juice</li>
+<li>1 glass warm water</li>
+<li>1 teaspoon Honey1 ripe Avocado</li>
+
+</ul>
+
+<h3>How to Make</h3>
+
+<ol>
+<li>Squeeze fresh lemon juice into a glass.</li>
+<li>Add warm water.</li>
+<li>Add honey if desired.</li>
+<li>Stir well until everything is mixed.</li>
+</ol>
+
+<h3>Main Ingredient Benefits</h3>
+
+<div class="benefits-box">
+Drinking a lemon drink made with lemon juice is a natural way to support healthy and glowing skin. Lemon is rich in vitamin C, which helps improve skin brightness and protects the skin from damage. When mixed with warm water and honey, it helps cleanse the body by removing toxins and improving digestion. This process supports clearer skin, reduces dullness, and keeps the skin hydrated. Regularly drinking lemon water can help maintain fresh, radiant, and naturally beautiful skin.
+</div>
+
+</div>
+
+</div>
