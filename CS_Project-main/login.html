@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Beauty Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html">HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html">Products</a></li>
+                   <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn active">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="form-container login-form-container">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="form-footer">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+            <p><a href="#" style="margin-top: 1rem; display: inline-block;">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Care</h3>
+                    <p>Your trusted partner in skincare and beauty products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@beautycare.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
