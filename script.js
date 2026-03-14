@@ -113,3 +113,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Recipe Search
+
+const searchInput = document.getElementById("recipeSearch");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup", function(){
+
+let filter = searchInput.value.toLowerCase();
+
+let recipes = document.querySelectorAll(".recipe-card");
+
+recipes.forEach(function(card){
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(filter)){
+card.style.display = "block";
+}
+else{
+card.style.display = "none";
+}
+
+});
+
+});
+
+}

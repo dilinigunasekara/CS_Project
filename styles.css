@@ -36,7 +36,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 /* Navigation Bar */
@@ -46,13 +46,31 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.navbar .container {
+    padding: 0;
+    margin: 0;
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
     align-items: center;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .logo a {
@@ -61,7 +79,11 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
 }
+
 
 .nav-menu {
     display: flex;
@@ -80,21 +102,17 @@ body {
     text-decoration: none;
 }
 
-.nav-menu li a:hover,
 .nav-menu li a.active {
     color: var(--primary-color);
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(132, 196, 59, 0.3);
 }
 
 .nav-menu li a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--primary-color);
-    text-decoration: none;
+    content: none;
 }
 
 
@@ -123,6 +141,18 @@ body {
 .register-btn:hover {
     background-color: rgb(36, 105, 36)
 }
+
+/* ensure buttons go green when clicked */
+.register-btn:active,
+.login-btn:active {
+    background-color: #004526 !important;
+    color: var(--white);
+}
+
+.form-group input[type="submit"]:active {
+    background-color: #004526;
+}
+
 
 .hamburger {
     display: none;
@@ -232,6 +262,17 @@ background-image: url("pictures/heropic.jpg");
     font-size: 0.9rem;
      background-color: var(--primary-color);
     color: var(--white);
+}
+
+/* Make the "View Recipe" buttons on the homepage black with gray hover */
+a.btn.btn-small[href="diy-recipes.html"] {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+a.btn.btn-small[href="diy-recipes.html"]:hover {
+    background-color: #555;
 }
 
 .btn-small:hover {
@@ -464,6 +505,84 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact Form (brown + black theme) */
+.contact-form-container {
+    background: linear-gradient(135deg, #3f2a1d 0%, #141212 55%, #000000 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-form-container h2 {
+    color: #f7f2e9;
+}
+
+.contact-form-container .form-group label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-form-container .form-group input,
+.contact-form-container .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-container .form-group input::placeholder,
+.contact-form-container .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form-container .form-group input:focus,
+.contact-form-container .form-group textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.12);
+}
+
+.contact-form-container .form-group input[type="submit"] {
+    background-color: rgba(95, 55, 35, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.contact-form-container .form-group input[type="submit"]:hover {
+    background-color: rgba(66, 39, 24, 0.95);
+}
+
+/* Login Form Specific */
+.login-form-container {
+    /* updated green color per request */
+    background: linear-gradient(
+        to bottom,
+        #004526 0%,
+        rgba(0, 69, 38, 0.7) 30%,
+        rgba(0, 69, 38, 0.4) 60%,
+        var(--white) 100%
+    );
+    border: none;
+}
+
+/* Register Form Specific */
+.register-form-container {
+    /* slightly transparent gradient */
+    background: linear-gradient(
+        to bottom,
+        rgba(0,103,75,0.85) 0%,
+        rgba(54,124,43,0.6) 50%,
+        rgba(0,98,65,0.85) 100%
+    );
+    border: none;
+}
+
 .form-container h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -526,11 +645,19 @@ section {
 }
 
 /* Page Styles */
-.page-header {
+.page-header1 {
+    background-image: url("pictures/background.jpg");
     background: linear-gradient(135deg, var(--secondary-color) 0%, var(--white) 100%);
     padding: 4rem 0;
     text-align: center;
 }
+.page-header2 {
+    background-image: url("pictures/heropic.jpg");
+  
+    padding: 4rem 0;
+    text-align: center;
+}
+
 
 .page-header h1 {
     font-size: 3rem;
@@ -543,13 +670,36 @@ section {
     color: var(--text-light);
 }
 
+/* Center Contact page header text */
+.contact-header h1,
+.contact-header p {
+    text-align: center;
+}
+
 .page-content {
     padding: 4rem 0;
 }
 
+/* Contact page tweaks: reduce gap above form and boost visibility */
+.contact-page {
+    padding: 2.5rem 0;
+}
+
+.contact-page .form-container {
+    margin: 2rem auto;
+}
+
+.contact-form-container {
+    background: linear-gradient(135deg, #3f2a1d 0%, #141212 55%, #000000 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+}
+
 /* DIY Recipes Section */
 .diy-recipes {
-    background-color: var(--white);
+    background-color: transparent;
     padding: 5rem 0;
 }
 
@@ -566,6 +716,12 @@ section {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove underline from recipe cards that are wrapped in links */
+.recipe-card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .recipe-card:hover {
@@ -811,4 +967,35 @@ section {
   margin-left: auto;
   margin-right: auto;
  
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    display: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }

@@ -12,13 +12,26 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="index.html">Beauty Care</a>
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html">HavenCare</a>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="diy-recipes.html">DIY Recipes</a></li>
-                    <li><a href="about.html">About</a></li>
+                   
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html">Products</a></li>
+                   <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="login.html" class="register-btn active">Login</a></li>
                     <li><a href="register.html" class="register-btn">Register</a></li>
@@ -33,7 +46,7 @@
     </nav>
 
     <!-- Login Form -->
-    <div class="form-container">
+    <div class="form-container login-form-container">
         <h2>Login to Your Account</h2>
         <form id="loginForm">
             <div class="form-group">

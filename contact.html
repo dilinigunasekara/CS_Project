@@ -12,14 +12,26 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
                     <a href="index.html">HavenCare</a>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
                      <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                     <li><a href="login.html" class="register-btn">Login</a></li>
                     <li><a href="register.html" class="register-btn">Register</a></li>
                 </ul>
@@ -33,7 +45,7 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header contact-header">
         <div class="container">
             <h1>Contact Us</h1>
             <p>We'd love to hear from you. Get in touch with us!</p>
@@ -41,11 +53,11 @@
     </section>
 
     <!-- Contact Content -->
-    <section class="page-content">
+    <section class="page-content contact-page">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1000px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 920px; margin: 0 auto; align-items: start;">
                 <!-- Contact Form -->
-                <div class="form-container" style="margin: 0;">
+                <div class="form-container contact-form-container">
                     <h2>Send us a Message</h2>
                     <form id="contactForm">
                         <div class="form-group">
@@ -62,7 +74,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Enter your message" style="width: 100%; padding: 0.8rem; border: 2px solid var(--border-color); border-radius: 10px; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Message">
