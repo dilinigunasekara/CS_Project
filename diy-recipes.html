@@ -5,6 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIY Recipes - HavenCare</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>/* PAGE HEADER */
+
+.page-header{
+padding:80px 10%;
+text-align:center;
+background:transparent;
+animation:
+fadeDown 1s ease;
+}
+
+.page-title{
+font-size:42px;
+font-weight:700;
+color:#1f3f2a;
+margin-bottom:15px;
+}
+
+.page-description{
+font-size:17px;
+color:#555;
+max-width:650px;
+margin:auto;
+line-height:1.6;
+}
+
+/* SEARCH BAR */
+
+#recipeSearch{
+padding:12px 18px;
+width:320px;
+border-radius:25px;
+border:none;
+background:#f5f5f5;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+font-size:15px;
+transition:0.3s;
+}
+
+#recipeSearch:focus{
+outline:none;
+background:rgb(255, 253, 253);
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* GRID */
+
+.recipes-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding-top:20px;
+}
+
+/* CARD */
+
+.recipe-card{
+background:rgb(126, 158, 123);
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.35s;
+animation:fadeUp 0.8s ease;
+}
+
+/* REMOVE LINK UNDERLINE */
+
+.recipe-card a{
+text-decoration:none;
+color:inherit;
+}
+
+/* IMAGE */
+
+.recipe-image{
+overflow:hidden;
+}
+
+.recipe-image img{
+width:100%;
+height:250px;
+object-fit:cover;
+transition:0.4s;
+}
+
+/* IMAGE ZOOM */
+
+.recipe-card:hover img{
+transform:scale(1.1);
+}
+
+/* CARD HOVER */
+
+.recipe-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgb(0, 0, 0);
+}
+
+/* TEXT */
+
+.recipe-info{
+padding:18px;
+text-align:center;
+}
+
+.recipe-info h3{
+font-size:17px;
+color:#000000;
+font-weight:600;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}</style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -20,15 +154,15 @@
                    <li class="dropdown">
                    <a href="diy-recipes.html">DIY Recipes ▾</a>
 
-                         <ul class="dropdown-menu">
+                          <ul class="dropdown-menu">
                             <li><a href="body.html">Body</a></li>
-                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
-                            <li><a href="diy-recipes.html?category=face">Face</a></li>
-                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
-                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="hair.html">Hair</a></li>
+                            <li><a href="face.html">Face</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                            <li><a href="oil.html">Oils</a></li>
                             <li><a href="diy-recipes.html">All</a></li>
-                        </ul>
-                   </li>
+                          </ul>
+                    </li>
                      <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -47,16 +181,21 @@
     <!-- Page Header -->
     
 <section class="page-header">
-        <div class="container">
-            <h1>DIY Beauty Recipes</h1>
-            <p>Create natural beauty products at home with simple, effective recipes</p>
-        </div>
-    </section>
+<div class="container">
+
+<h1 class="page-title">Natural DIY Beauty Recipes</h1>
+
+<p class="page-description">
+<b>Make it at home</b> 
+</p>
+
+</div>
+</section>
 <section class="diy-recipes">
 
 <div class="container">
 
-<h2 class="section-title">DIY Recipes</h2>
+
 
 <!-- Search Bar -->
 
