@@ -1,0 +1,90 @@
+body{
+font-family: Arial;
+background:transparent
+margin:0;
+padding:0;
+}
+
+.container{
+width:80%;
+margin:auto;
+margin-top:40px;
+background:transparent;
+padding:40px;
+}
+
+.product{
+display:flex;
+gap:50px;
+}
+
+.pimage img{
+width:350px;
+height: 300px;
+
+border-radius:20px;
+
+object-fit: cover;
+margin: 0 auto;
+flex: 1;
+
+}
+
+.product-details{
+width:400px;
+}
+
+.price{
+font-size:28px;
+margin-top:10px;
+}
+
+.installment{
+color:gray;
+margin-bottom:10px;
+}
+
+.shipping{
+color:#666;
+margin-bottom:20px;
+}
+
+label{
+display:block;
+margin-top:15px;
+margin-bottom:5px;
+font-weight:bold;
+}
+
+select,input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+.cart{
+width:100%;
+padding:15px;
+background:white;
+border:2px solid #333;
+font-size:16px;
+margin-top:10px;
+cursor:pointer;
+}
+
+.buy{
+width:100%;
+padding:15px;
+background:#4f6f6f;
+color:white;
+border:none;
+font-size:16px;
+margin-top:10px;
+cursor:pointer;
+}
+.buy a{
+   text-decoration: none;
+   color: black;
+}

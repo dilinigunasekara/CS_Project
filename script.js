@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add to Cart functionality (placeholder)
-    document.querySelectorAll('.btn-small').forEach(button => {
+   /* document.querySelectorAll('.btn-small').forEach(button => {
         if (button.textContent.includes('Add to Cart')) {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-});
+});*/
 
 // Add active class to current page in navigation
 document.addEventListener('DOMContentLoaded', function() {
