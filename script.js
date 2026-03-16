@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add to Cart functionality (placeholder)
-   /* document.querySelectorAll('.btn-small').forEach(button => {
+    document.querySelectorAll('.btn-small').forEach(button => {
         if (button.textContent.includes('Add to Cart')) {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-});*/
+});
 
 // Add active class to current page in navigation
 document.addEventListener('DOMContentLoaded', function() {
@@ -141,4 +141,20 @@ card.style.display = "none";
 
 });
 
+}
+const cards = document.querySelectorAll(".product-card");
+
+window.addEventListener("scroll", showCards);
+
+function showCards(){
+    const triggerBottom = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+
+        if(cardTop < triggerBottom){
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
 }

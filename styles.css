@@ -21,11 +21,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
-    overflow-x: hidden;
-
-
-
-    
+    overflow-x: hidden;   
     background-image: url('pictures/background.jpg');
     background-repeat: no-repeat;  
     background-size: cover;      
@@ -169,39 +165,40 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    min-height: 600px;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--white) 100%);
-    padding: 4rem 2rem;
-    gap: 3rem;
-
-background-image: url("pictures/heropic.jpg");
+.hero{
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/736x/26/9e/cd/269ecdcc2121f6d38abd8b1bb6cd3aff.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    color:white;
 }
 
-
-
-.hero-content {
-    flex: 1;
-    max-width: 600px;
+.hero-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 1rem;
-    line-height: 1.2;
+.hero-content{
+    position:relative;
+    z-index:2;
+    animation:fadeUp 1.5s ease;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    color: var(--white);
-    margin-bottom: 2rem;
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.4rem;
+    margin-bottom:30px;
 }
 
 .hero-buttons {
@@ -223,50 +220,30 @@ background-image: url("pictures/heropic.jpg");
 }
 
 /* Buttons */
-.btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
+.btn{
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
+.btn-primary{
+    background:#709772;
+    color:rgb(255, 255, 255);
 }
 
-.btn-primary:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3);
+.btn-secondary{
+    background:rgb(0, 0, 0);
+    color:#fafafa;
 }
 
-.btn-secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+.btn:hover{
+    transform:scale(1.1);
 }
-
-.btn-secondary:hover {
-    background-color: rgba(100, 197, 21, 0.253);
-    color: rgb(50, 88, 52);
-}
-
-.btn-small {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-     background-color: var(--primary-color);
-    color: var(--white);
-}
-
 /* Make the "View Recipe" buttons on the homepage black with gray hover */
 a.btn.btn-small[href="diy-recipes.html"] {
-    background-color: #000;
+    background-color: #050505;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }

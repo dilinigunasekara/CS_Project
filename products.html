@@ -5,6 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - HavenCare</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .page-header{
+    padding:120px 20px 80px 20px;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),
+    url("https://i.pinimg.com/1200x/3d/83/e1/3d83e10935b72afaab67dfbfc4050ee7.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.page-header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    animation:fadeDown 1s ease;
+    color: #f3f7f8;
+}
+
+.page-header p{
+    font-size:1.2rem;
+    max-width:600px;
+    margin:auto;
+    animation:fadeUp 1.2s ease;
+    color: #ffffff;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+    transform:translateY(20px);
+    opacity:0;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.product-image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.product-image{
+overflow:hidden;
+}
+
+.product-image img{
+transition:0.5s;
+}
+
+.product-card:hover img{
+transform:scale(1.1);
+}
+    </style>
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -46,12 +127,12 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Our Products</h1>
-            <p>Discover our complete range of premium beauty care products</p>
-        </div>
-    </section>
+<section class="page-header">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>Discover our complete range of premium natural ingredients for your beauty care</p>
+    </div>
+</section>
 
     <!-- Products Section -->
     <section class="featured-products">
@@ -141,20 +222,20 @@
         </div>
     </section>
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Beauty Care</h3>
-                    <p>Your trusted partner in skincare and beauty products.</p>
+                    <h3>HavenCare</h3>
+                    <p>Your trusted partner in Skincare hacks with organic ingredients.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
                         <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                         <li><a href="products.html">Products</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -168,12 +249,12 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: info@beautycare.com</p>
-                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Email: havencare@gmail.com</p>
+                    <p>Phone: +94 23 7689 425</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Beauty Care. All rights reserved.</p>
+                <p>&copy; 2026 Havencare. All rights reserved.</p>
             </div>
         </div>
     </footer>
