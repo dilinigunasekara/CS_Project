@@ -5,8 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HavenCare - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>body{
+font-family:'Poppins',sans-serif;
+}
+
+.hero h1{
+    animation:floatText 3s infinite ease-in-out;
+}
+
+@keyframes floatText{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+
+.floating-leaf{
+position:absolute;
+top:20%;
+left:10%;
+width:80px;
+animation:float 6s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+}
+
+.benefits{
+padding:80px 0;
+background:transparent;
+}
+
+.benefits-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+text-align:center;
+}
+
+.benefit-item{
+background:rgb(255, 255, 255);
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.benefit-item:hover{
+transform:translateY(-10px);
+}
+
+.benefit-icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+
+</style>
+
+
 </head>
-<body calss="background">
+<body class="background">
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
@@ -21,11 +85,11 @@
                    <a href="diy-recipes.html">DIY Recipes ▾</a>
 
                          <ul class="dropdown-menu">
-                            <li><a href="diy-recipes.html?category=body">Body</a></li>
-                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
-                            <li><a href="diy-recipes.html?category=face">Face</a></li>
-                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
-                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="body.html">Body</a></li>
+                            <li><a href="hair.html">Hair</a></li>
+                            <li><a href="face.html">Face</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                            <li><a href="oil.html">Oils</a></li>
                             <li><a href="diy-recipes.html">All</a></li>
                         </ul>
                    </li>
@@ -46,18 +110,19 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1> Reveal Your Natural Glow With Us</h1>
-            <p>Let Nature Enhance Your Beauty</p>
-            <div class="hero-buttons">
-                <a href="products.html" class="btn btn-primary">Shop Now</a>
-                <a href="about.html" class="btn btn-primary">Learn More</a>
-            </div>
+       
+    <div class="hero-overlay"></div>
+ 
+    <div class="hero-content">
+        <h1>Reveal Your Natural Glow</h1>
+        <p>Discover the beauty of nature with organic skincare and DIY recipes</p>
+
+        <div class="hero-buttons">
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+            <a href="diy-recipes.html" class="btn btn-secondary">Explore Recipes</a>
         </div>
-        <div class="hero-image">
-            <img src="" alt="">
-        </div>
-    </section>
+    </div>
+</section>
 
      <!-- DIY Recipes Section -->
       <div class="featured-products" >
@@ -71,73 +136,42 @@
             <div class="recipes-grid">
                 <div class="recipe-card">
                     <div class="recipe-image">
-                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=300&fit=crop" alt="Rice Floor Face Scrub">
+                        <img src="https://i.pinimg.com/736x/64/7e/e5/647ee57459fe8fe6598ab7e17aebf0cb.jpg" alt="Rice Floor Face Scrub">
                     </div>
                     <div class="recipe-info">
-                        <h3>Rice Floor Face Scrub</h3>
+                        <h3>Red Sandalwood Body Scrub For radient Skin</h3>
                         <p class="recipe-time">⏱ 5 minutes</p>
-                        <p class="recipe-description">A rice flour face scrub is a natural exfoliant made from finely ground rice that helps remove dead skin cells. <br>It brightens the skin and leaves it smooth, soft, and refreshed.</p>
-                        <a href="diy-recipes.html" class="btn btn-small">View Recipe</a>
+                        <p class="recipe-description"> Red sandalwood (Rakta Chandan) is a natural ingredient widely used in traditional beauty treatments. It helps improve skin tone, remove dead skin cells, and give the skin a healthy glow</p>
+                        <a href="red_sandalwood_body.html" class="btn btn-small">View Recipe</a>
                     </div>
                 </div>
                 <div class="recipe-card">
                     <div class="recipe-image">
-                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=300&fit=crop" alt="Turmeric, Honey Scrub">
+                        <img src="https://i.pinimg.com/736x/a0/3d/16/a03d1665c63825dd61a828801c761cf9.jpg" alt="Turmeric, Honey Scrub">
                     </div>
                     <div class="recipe-info">
-                        <h3>Turmeric, Honey And Aloe Vera Face Scrub</h3>
-                        <p class="recipe-time">⏱ 15 minutes</p>
-                        <p class="recipe-description">A turmeric face scrub is a natural skincare remedy known for its antibacterial and anti-inflammatory properties.<br> It helps cleanse the skin, reduce acne, and enhance natural glow.</p>
-                        <a href="diy-recipes.html" class="btn btn-small">View Recipe</a>
+                        <h3>Lemon Juice For Brightening Skin</h3>
+                        <p class="recipe-time">⏱ 5 minutes</p>
+                        <p class="recipe-description">Lemon is rich in vitamin C, antioxidants, and natural acids that help cleanse the body and support healthy skin. Drinking lemon water regularly helps remove toxins from the body, improve digestion, and keep the body hydrated.
+</p>
+                        <a href="Lemon_drink.html" class="btn btn-small">View Recipe</a>
                     </div>
                 </div>
                 <div class="recipe-card"> 
                     <div class="recipe-image">
-                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=300&fit=crop" alt="Avacado Hair Mask">
+                        <img src="https://i.pinimg.com/736x/fb/bf/be/fbbfbe1639a587f6adeaacd978bf469d.jpg" alt="Avacado Hair Mask">
                     </div>
                     <div class="recipe-info">
-                        <h3>Avocado Hair Mask</h3>
-                        <p class="recipe-time">⏱ 20 minutes</p>
-                        <p class="recipe-description">Nourish your hair with this deep conditioning mask made from natural avocado and coconut oil.</p>
-                        <a href="diy-recipes.html" class="btn btn-small">View Recipe</a>
+                        <h3>Avocado Hair Mask For Shiny Hair</h3>
+                        <p class="recipe-time">⏱ 10 minutes</p>
+                        <p class="recipe-description">Avocado is rich in healthy fats, vitamins, and minerals that deeply nourish hair and improve scalp health.</p>
+                        <a href="avacado.html" class="btn btn-small">View Recipe</a>
                     </div>
                 </div>
-                <div class="recipe-card">
-                    <div class="recipe-image">
-                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" alt="Fenugreek Hair Scrub">
-                    </div>
-                    <div class="recipe-info">
-                        <h3>Fenugreek Hair Mask</h3>
-                        <p class="recipe-time">⏱ 20 minutes</p>
-                        <p class="recipe-description">A fenugreek hair scrub is a natural treatment that helps cleanse the scalp and remove dead skin cells.<br> It reduces dandruff, strengthens hair roots, and promotes healthy hair growth.</p>
-                        <a href="diy-recipes.html" class="btn btn-small">View Recipe</a>
-                    </div>
-                </div>
+                
 
-
-                 <div class="recipe-card">
-                    <div class="recipe-image">
-                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" alt="Fenugreek Hair Scrub">
-                    </div>
-                    <div class="recipe-info">
-                        <h3>Fenugreek Hair Mask</h3>
-                        <p class="recipe-time">⏱ 20 minutes</p>
-                        <p class="recipe-description">A fenugreek hair scrub is a natural treatment that helps cleanse the scalp and remove dead skin cells.<br> It reduces dandruff, strengthens hair roots, and promotes healthy hair growth.</p>
-                        <a href="diy-recipes.html" class="btn btn-small">View Recipe</a>
-                    </div>
-                </div>
-
-                 <div class="recipe-card">
-                    <div class="recipe-image">
-                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" alt="Fenugreek Hair Scrub">
-                    </div>
-                    <div class="recipe-info">
-                        <h3>Fenugreek Hair Mask</h3>
-                        <p class="recipe-time">⏱ 20 minutes</p>
-                        <p class="recipe-description">A fenugreek hair scrub is a natural treatment that helps cleanse the scalp and remove dead skin cells.<br> It reduces dandruff, strengthens hair roots, and promotes healthy hair growth.</p>
-                        <a href="diy-recipes.html" class="btn btn-small">View Recipe</a>
-                    </div>
-                </div>
+                
+               
             </div>
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="diy-recipes.html" class="btn login-btn">View All Recipes</a>
@@ -192,48 +226,54 @@
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop" alt="Product 4">
-                    </div>
-                    <div class="product-info">
-                        <h3>Gentle Cleanser</h3>
-                        <p class="product-price">$29.99</p>
-                        <a href="#" class="btn btn-small">Add to Cart</a>
-                    </div>
-                </div>
+                
             </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="products.html" class="btn login-btn">View All Products</a>
+            </div>
+
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class=>
-        <div class="container">
-             <img src="pictures/pic3.png" alt="choose" height="350px" width="500px" class="center">
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-icon">🌿</div>
-                    <h3>Natural Ingredients</h3>
-                    <p>100% organic and natural ingredients sourced from trusted suppliers</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon">✨</div>
-                    <h3>Premium Quality</h3>
-                    <p>Laboratory-tested products ensuring the highest quality standards</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon">💚</div>
-                    <h3>Cruelty-Free</h3>
-                    <p>All our products are cruelty-free and environmentally conscious</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon">🚚</div>
-                    <h3>Free Shipping</h3>
-                    <p>Free shipping on orders over $50 worldwide</p>
-                </div>
+    <!-- Why Choose HavenCare Section -->
+<section class="benefits">
+    <div class="container">
+
+        <img src="pictures/pic3.png" alt="Why Choose HavenCare" height="350" width="500" class="center">
+
+        <div class="benefits-grid">
+
+            <div class="benefit-item">
+                <div class="benefit-icon">🌿</div>
+                <h3>Natural Beauty Hacks</h3>
+                <p>Discover simple and effective beauty hacks made from natural ingredients that help you care for your skin and hair at home.</p>
             </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">🍃</div>
+                <h3>Organic Ingredients Store</h3>
+                <p>Shop high-quality organic ingredients such as oils, herbs, and natural powders to create your own DIY beauty products.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">✨</div>
+                <h3>Safe & Chemical Free</h3>
+                <p>Our recipes focus on natural and chemical-free solutions that are gentle on your skin and promote healthy beauty.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon">💚</div>
+                <h3>Easy DIY Recipes</h3>
+                <p>Follow our easy step-by-step recipes for face care, hair care, body treatments, and healthy natural drinks.</p>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+</section>
+
+
 
    
     <!-- Testimonials Section -->
@@ -289,12 +329,12 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: info@beautycare.com</p>
-                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Email: havencare@gmail.com</p>
+                    <p>Phone: +94 23 7689 425</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 HavenCare. All rights reserved.</p>
+                <p>&copy; 2026 Havencare. All rights reserved.</p>
             </div>
         </div>
     </footer>
