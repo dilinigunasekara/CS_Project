@@ -53,7 +53,7 @@
 
 <div class="product-details">
 
-<h1>Gram Flour</h1>
+<h1>Gram Flour (100g)</h1>
 
 <h2 class="price" id="price">Rs 850.00</h2>
 
@@ -78,8 +78,9 @@ function addToCart(){
 
 let name = "Gram flour";
 let size = document.getElementById("size").value;
-let quan = document.getElementById("quan").value;
-let price = document.getElementById("price").innerText;
+let sizeNum = parseInt(size);
+let quan = Number(document.getElementById("quan").value);
+let price =" Rs. " + 850*quan*(sizeNum/100);
 
 window.location.href =
 "cart.html?name="+name+"&size="+size+"&quan="+quan+"&price="+price;

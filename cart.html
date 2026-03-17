@@ -124,7 +124,7 @@ button:hover{
 <script>
 
 let params = new URLSearchParams(window.location.search);
-
+const price = params.get("price");
 document.getElementById("pname").innerHTML = params.get("name");
 document.getElementById("psize").innerHTML = params.get("size");
 document.getElementById("pquan").innerHTML = params.get("quan");
