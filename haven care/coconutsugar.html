@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coconut & Sugar Scrub</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+   /* Page Background */
+
+.recipe-page{
+padding:120px 10% 80px 10%;
+background-color:#fdfaf6;
+background-image:url("https://i.pinimg.com/1200x/17/5a/57/175a57157a9ef0f0712c5f304d164a5e.jpg");
+background-size:1400px;
+
+position:relative;
+}
+
+.recipe-page::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/honeycomb.png");
+opacity:0.08;
+z-index:0;}
+/* Main Container */
+
+.recipe-container{
+position:relative;
+z-index:1;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+animation:fadeIn 1.2s ease;
+
+}
+
+/* Image Styling */
+
+.recipe-image{
+width:350px;
+height:350px;
+overflow:hidden;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+animation:fadeIn 1.2s ease;
+}
+.recipe-image{
+width:350px;
+height:350px;
+overflow:hidden;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+animation:fadeIn 1.2s ease;
+}
+
+.recipe-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:transform 0.5s ease;
+}
+
+/* Hover Zoom Effect */
+
+.recipe-image:hover img{
+transform:scale(1.1);
+}
+
+.recipe-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* Content */
+.recipe-content{
+flex:1;
+max-width:600px;
+}
+
+.recipe-content h2{
+font-size:36px;
+margin-bottom:15px;
+font-weight:700;
+color:#2a4c4e;
+position:relative;
+display:inline-block;
+}
+
+/* Highlight Line Under Title */
+
+.recipe-content h2::after{
+content:"";
+display:block;
+width:70px;
+height:4px;
+background:linear-gradient(90deg,#86d6cb,#7ccdf3);
+margin-top:8px;
+border-radius:5px;
+}
+
+.recipe-content p{
+color:#0c0c0b;
+line-height:1.6;
+}
+
+/* Section Titles */
+
+.recipe-content h3{
+margin-top:25px;
+margin-bottom:10px;
+color:#41cabf;
+font-size:20px;
+border-left:4px solid #79f1d3;
+padding-left:10px;
+}
+
+/* Lists */
+
+.recipe-content ul,
+.recipe-content ol{
+padding-left:20px;
+color:#555;
+}
+
+.recipe-content li{
+margin-bottom:8px;
+}
+
+/* Highlight Box */
+
+.benefits-box{
+background:#98d2d4;
+padding:15px 20px;
+border-radius:8px;
+margin-top:10px;
+line-height:1.6;
+}
+
+
+/* Fade In Animation */
+
+@keyframes fadeIn{
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Floating Animation */
+
+.recipe-image{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+</style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html">HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="body.html">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+<!-- RECIPE CONTENT -->
+
+<section class="recipe-page">
+
+<div class="recipe-container">
+
+<div class="recipe-image">
+<img src="https://i.pinimg.com/736x/5e/fe/e8/5efee812735d3b60860deedc2619cc81.jpg" alt="Coconut_Sugar">
+</div>
+
+<div class="recipe-content">
+
+<h2>Coconut and Sugar Natural Exfoliating Scrub</h2>
+
+<p>
+ Coconut and sugar scrub is a simple natural exfoliator that helps remove dead skin cells and moisturize the skin. It leaves the skin soft, smooth, and glowing.
+</p>
+
+<h3>Ingredients</h3>
+
+<ul>
+<li>2 tablespoons coconut oil</li>
+<li>1 tablespoon sugar</li>
+<li>1 teaspoon honey</li>
+
+</ul>
+
+<h3>How to Make</h3>
+
+<ol>
+<li>Mix coconut oil and sugar in a bowl.</li>
+<li>Add honey if you want extra moisture.</li>
+<li>Apply the mixture on damp skin.</li>
+<li>Gently massage in circular motions for about 2–3 minutes.</li>
+<li>Rinse off with warm water and pat dry.</li>
+</ol>
+
+<h3>Main Ingredient Benefits</h3>
+
+<div class="benefits-box">
+Coconut and sugar scrub is a gentle natural exfoliating treatment that helps remove dead skin cells and impurities from the skin. Sugar works as a natural exfoliator while coconut oil deeply moisturizes and nourishes the skin. Regular use can improve skin texture, keep the skin soft and hydrated, and give it a healthy natural glow. 
+</div>
+
+</div>
+
+</div>
+</section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Care</h3>
+                    <p>Your trusted partner in skincare and beauty products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@beautycare.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HavenCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+</body>
+
+</html>

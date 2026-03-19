@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Sandalwood-Body-Scrub</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+   /* Page Background */
+
+.recipe-page{
+padding:120px 10% 80px 10%;
+background-color:#fdfaf6;
+background-image:url("https://i.pinimg.com/1200x/40/0a/1e/400a1ee68d8e88a077906ff7343a0f3c.jpg");
+background-size:1000px;
+position:relative;
+}
+
+.recipe-page::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/honeycomb.png");
+opacity:0.08;
+z-index:0;}
+/* Main Container */
+
+.recipe-container{
+position:relative;
+z-index:1;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+animation:fadeIn 1.2s ease;
+
+}
+
+/* Image Styling */
+
+.recipe-image{
+width:350px;
+height:350px;
+overflow:hidden;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+animation:fadeIn 1.2s ease;
+}
+.recipe-image{
+width:350px;
+height:350px;
+overflow:hidden;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+animation:fadeIn 1.2s ease;
+}
+
+.recipe-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:transform 0.5s ease;
+}
+
+/* Hover Zoom Effect */
+
+.recipe-image:hover img{
+transform:scale(1.1);
+}
+
+.recipe-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* Content */
+.recipe-content{
+flex:1;
+max-width:600px;
+}
+
+.recipe-content h2{
+font-size:36px;
+margin-bottom:15px;
+font-weight:700;
+color:#ca5e67;
+position:relative;
+display:inline-block;
+}
+
+/* Highlight Line Under Title */
+
+.recipe-content h2::after{
+content:"";
+display:block;
+width:70px;
+height:4px;
+background:linear-gradient(90deg,#e77180,#d85975);
+margin-top:8px;
+border-radius:5px;
+}
+
+.recipe-content p{
+color:#666;
+line-height:1.6;
+}
+
+/* Section Titles */
+
+.recipe-content h3{
+margin-top:25px;
+margin-bottom:10px;
+color:#a70823;
+font-size:20px;
+border-left:4px solid #a50808;
+padding-left:10px;
+}
+
+/* Lists */
+
+.recipe-content ul,
+.recipe-content ol{
+padding-left:20px;
+color:#555;
+}
+
+.recipe-content li{
+margin-bottom:8px;
+}
+
+/* Highlight Box */
+
+.benefits-box{
+background:#c57279;
+padding:15px 20px;
+border-radius:8px;
+margin-top:10px;
+line-height:1.6;
+}
+
+/* Fade In Animation */
+
+@keyframes fadeIn{
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Floating Animation */
+
+.recipe-image{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+</style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html">HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="body.html">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+<!-- RECIPE CONTENT -->
+
+<section class="recipe-page">
+
+<div class="recipe-container">
+
+<div class="recipe-image">
+<img src="https://i.pinimg.com/736x/9f/6f/c8/9f6fc8a0442aa8c7259b1ad50c58c674.jpg" alt="Red Sandalwood Body Scrub Scrub">
+</div>
+
+<div class="recipe-content">
+
+<h2> Red Sandalwood Body Scrub for Radiant Skin</h2>
+
+<p>
+Red sandalwood (Rakta Chandan) is a natural ingredient widely used in traditional beauty treatments. It helps improve skin tone, remove dead skin cells, and give the skin a healthy glow.
+</p>
+
+<h3>Ingredients</h3>
+
+<ul>
+<li>2 tablespoons Red sandalwood powder</li>
+<li>2 tablespoons Gram flour</li>
+<li>1 tablespoon Honey</li>
+<li>2–3 tablespoons Milk or Rose water</li>
+</ul>
+
+<h3>How to Make</h3>
+
+<ol>
+<li>Take red sandalwood powder and gram flour in a bowl.</li>
+<li>Add honey and milk (or rose water).</li>
+<li>Mix well until it forms a thick scrub paste.</li>
+</ol>
+
+<h3>Main Ingredient Benefits</h3>
+
+<div class="benefits-box">
+    A body scrub made with red sandalwood is a natural way to achieve radiant and healthy skin. Red sandalwood helps gently remove dead skin cells and impurities from the skin surface. When mixed with gram flour, honey, and milk, it exfoliates the skin while also providing moisture and nourishment. This natural scrub helps improve skin tone, reduce tanning and dullness, and make the skin smoother and softer. Regular use can help maintain bright, glowing, and naturally radiant skin.
+
+</div>
+
+</div>
+
+</div>
+</section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Care</h3>
+                    <p>Your trusted partner in skincare and beauty products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@beautycare.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HavenCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+</body>
+
+</html>

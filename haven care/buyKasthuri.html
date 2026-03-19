@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+    body{
+font-family: Arial;
+margin:0;
+background:#f6f6f6;
+}
+
+.checkout-container{
+display:flex;
+width:80%;
+margin:auto;
+margin-top:40px;
+background:white;
+padding:30px;
+gap:40px;
+}
+
+/* LEFT SIDE */
+
+.left{
+flex:1;
+}
+
+.left input,
+.left select{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.name-row{
+display:flex;
+gap:10px;
+}
+
+.checkbox{
+font-size:14px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+flex:1;
+background:#fafafa;
+padding:20px;
+border-radius:8px;
+}
+
+.product{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:20px;
+}
+
+.product img{
+width:60px;
+height:60px;
+border-radius:8px;
+}
+
+.product-info{
+flex:1;
+}
+
+.price{
+font-weight:bold;
+}
+
+.discount{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.discount input{
+flex:1;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.discount button{
+padding:10px 20px;
+background:#ddd;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.summary p{
+display:flex;
+justify-content:space-between;
+margin:8px 0;
+}
+
+.summary h3{
+display:flex;
+justify-content:space-between;
+}
+.confirm-btn{
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#000;
+color:white;
+font-size:16px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.confirm-btn:hover{
+background:#333;
+}
+</style>
+</head>
+
+<body>
+     <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html"> HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="checkout-container">
+
+<!-- LEFT SIDE -->
+<div class="left">
+<form id="checkoutForm" onsubmit="return validateForm()">
+
+<h2>Contact</h2>
+
+<input type="text"  id="contact" placeholder="Email or mobile phone number" required >
+
+
+
+<h2>Delivery</h2>
+
+<select>
+<option>Sri Lanka</option>
+<option>India</option>
+<option>USA</option>
+</select>
+
+<div class="name-row">
+<input type="text" id="fname" placeholder="First name">
+<input type="text" id="lname" placeholder="Last name">
+</div>
+
+<input type="text" id="address" placeholder="Address">
+<input type="text" placeholder="Apartment, suite, etc. (optional)">
+
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="right">
+
+<div class="product">
+
+<img src="pictures/kasthuri.jpg">
+
+<div class="product-info">
+<p>Kasthuri Manjal Powder</p>
+<small>50g</small>
+</div>
+
+<div class="price">
+Rs 990.00
+</div>
+
+</div>
+
+<div class="summary">
+
+<p>Subtotal <span>Rs 990.00</span></p>
+<p>Shipping <span>Rs 0.00</span></p>
+
+<hr>
+
+<h3>Total <span>LKR Rs 990.00</span></h3>
+
+<button type="submit" class="confirm-btn">Confirm Order</button>
+
+</div>
+
+</div>
+
+</div>
+</form>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Care</h3>
+                    <p>Your trusted partner in skincare and beauty products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@beautycare.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="buy.js"></script>
+</body>
+</html>

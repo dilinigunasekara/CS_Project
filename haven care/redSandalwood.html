@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Red Sandalwood Powder</title>
+<link rel="stylesheet" href="products.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html"> HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav><br><br><br>
+<div class="container">
+
+<div class="product">
+
+<div class="pimage">
+<img src="pictures/redsandalwood.jpg" alt="Red Sandalwood Powder" >
+</div>
+
+<div class="product-details">
+
+<h1>Red Sandalwood Powder (100g)</h1>
+
+<h2 class="price" id="price">Rs 850.00</h2>
+
+
+<p class="shipping">Shipping Free.</p>
+
+<label>Size</label>
+<select id="size">
+<option>100g</option>
+<option>200g</option>
+<option>500g</option>
+</select>
+
+<label>Quantity</label>
+<input type="number" value="1" id="quan">
+
+<button class="cart" onclick="addToCart()">Add to Cart</button>
+<script>
+
+function addToCart(){
+
+let name = "Red Sandalwood Powder";
+let size = document.getElementById("size").value;
+let sizeNum = parseInt(size);
+let quan = Number(document.getElementById("quan").value);
+let price =" Rs. " + 850*quan*(sizeNum/100);
+
+window.location.href =
+"cart.html?name="+name+"&size="+size+"&quan="+quan+"&price="+price;
+
+}
+
+</script>
+
+<button class="buy"><a href="buyRS.html">Buy it now</a></button>
+
+</div>
+
+</div>
+
+</div>
+<br><br>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Care</h3>
+                    <p>Your trusted partner in skincare and beauty products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@beautycare.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenCare - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body calss="background">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html"> HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="body.html">Body</a></li>
+                            <li><a href="hair.html">Hair</a></li>
+                            <li><a href="face.html">Face</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                            <li><a href="oil.html">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<style>
+
+/* BACKGROUND */
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+position:relative;
+z-index:1;
+}
+
+/* BLURRED BACKGROUND IMAGE */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("https://i.pinimg.com/736x/49/92/f8/4992f834792d300639e0d17ddf9763b4.jpg");
+background-size: cover;
+background-position:center;
+background-repeat:no-repeat;
+filter:blur(2px);
+transform:scale(1.05);
+z-index:-1;
+}
+
+/* SECTION */
+.body-recipes{
+padding:100px 10%;
+animation:fadeIn 1.2s ease;
+}
+
+/* TITLE */
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:42px;
+font-weight:700;
+color:#1d3a2b;
+letter-spacing:1px;
+position:relative;
+}
+
+.section-title::after{
+content:"";
+width:120px;
+height:4px;
+background:#6a9e65;
+display:block;
+margin:10px auto 0;
+border-radius:2px;
+}
+
+/* SEARCH BAR */
+.search-bar{
+display:flex;
+justify-content:center;
+margin-bottom:50px;
+}
+
+.search-bar input{
+width:380px;
+padding:14px 20px;
+border-radius:40px;
+border:1px solid #ddd;
+font-size:15px;
+outline:none;
+transition:0.3s;
+background:#fff;
+}
+
+.search-bar input:focus{
+border-color:#6a9e65;
+box-shadow:0 0 12px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.recipe-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:35px;
+}
+
+/* CARD */
+.recipe-card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.4s;
+position:relative;
+cursor:pointer;
+}
+
+/* CARD HOVER */
+.recipe-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.recipe-card img{
+width:100%;
+height:210px;
+object-fit:cover;
+transition:0.4s;
+}
+
+/* IMAGE ZOOM */
+.recipe-card:hover img{
+transform:scale(1.1);
+}
+
+/* RECIPE NAME */
+.recipe-name{
+padding:18px;
+text-align:center;
+font-weight:600;
+font-size:17px;
+color:#333;
+}
+
+/* LINK RESET */
+.recipe-grid a{
+text-decoration:none;
+color:inherit;
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- BODY RECIPES SECTION -->
+<section class="body-recipes">
+
+<h2 class="section-title">DIY Drinks Recipes </h2>
+
+
+
+<div class="recipe-grid">
+
+<a href="watermelon_juice.html">
+<div class="recipe-card">
+<img src="https://i.pinimg.com/1200x/d3/9b/72/d39b7284d45e9bdcf409aed565cd4e58.jpg">
+<div class="recipe-name">Watermelon Juice for Hydrated Skin</div>
+</div>
+</a>
+
+<a href="Lemon_drink.html">
+<div class="recipe-card">
+<img src="https://i.pinimg.com/736x/a0/3d/16/a03d1665c63825dd61a828801c761cf9.jpg">
+<div class="recipe-name">Lemon Juice For Brightening Skin</div>
+</div>
+</a>
+
+<a href="#">
+<div class="recipe-card">
+<img src="https://i.pinimg.com/736x/e9/1b/0d/e91b0db1b1d31660dcbd4d298b064dd8.jpg">
+<div class="recipe-name">Carrot & Orange Beauty Juice</div>
+</div>
+</a>
+
+<a href="#">
+<div class="recipe-card">
+<img src="https://i.pinimg.com/1200x/06/54/bc/0654bc8c71912fefbf483627869d26ce.jpg">
+<div class="recipe-name">Turmeric Golden Milk</div>
+</div>
+</a>
+
+<a href="#">
+<div class="recipe-card">
+<img src="https://i.pinimg.com/736x/99/12/63/9912634d9443b3d1986076fdee7c0387.jpg">
+<div class="recipe-name">Cucumber Mint Detox Drink</div>
+</div>
+</a>
+</div>
+
+</section>
+
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HavenCare</h3>
+                    <p>Your trusted partner in Skincare hacks with organic ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                         <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: havenCare@gmail.com</p>
+                    <p>Phone: +94 23 7689 425</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HavenCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

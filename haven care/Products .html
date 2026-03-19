@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - HavenCare</title>
+    <link rel="stylesheet" href="./Products _files/styles.css">
+    <style>
+      .page-header{
+    padding:120px 20px 80px 20px;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),
+    url("https://i.pinimg.com/1200x/3d/83/e1/3d83e10935b72afaab67dfbfc4050ee7.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.page-header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    animation:fadeDown 1s ease;
+    color: #f3f7f8;
+}
+
+.page-header p{
+    font-size:1.2rem;
+    max-width:600px;
+    margin:auto;
+    animation:fadeUp 1.2s ease;
+    color: #ffffff;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+    transform:translateY(20px);
+    opacity:0;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.product-image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.product-image{
+overflow:hidden;
+}
+
+.product-image img{
+transition:0.5s;
+}
+
+.product-card:hover img{
+transform:scale(1.1);
+}
+    </style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/index.html"><img src="./Products _files/logo.png" alt="logo" height="70" width="80"></a>
+                    <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/index.html"> HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/index.html">Home</a></li>
+                   
+                    <li class="dropdown">
+                   <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html" class="active">Products</a></li>
+                    <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/about.html">About</a></li>
+                    <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/contact.html">Contact</a></li>
+                    <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/login.html" class="register-btn">Login</a></li>
+                    <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>Discover our complete range of premium natural ingredients for your beauty care</p>
+    </div>
+</section>
+
+    <!-- Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/20a5c092ffee26d96eeae72a4290866c.jpg" alt="Red Sandalwood">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Sandalwood Powder</h3>
+                        <p class="product-price">LKR 50.00 </p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/redSandalwood.html" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/0126a361385b4ca2ae148bf056ebe8a8.jpg" alt="Kasthuri Manjal Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kasthuri Manjal Powder</h3>
+                        <p class="product-price">LKR 40.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/kasthuri.html" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/dbd8a0ca847df8ce0cbc4686a5920c2d.jpg" alt="Gram Flour">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gram Flour</h3>
+                        <p class="product-price">LKR 60.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/gramFlour.html" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/bbd38e49d04ae4dbcbcd1af60632f010.jpg" alt="Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3>Honey</h3>
+                        <p class="product-price">LKR 180.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/ee4f9ed927fff5ed0201031edd89fd6f.jpg" alt="Aloe Gel">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aloe Gel</h3>
+                        <p class="product-price">LKR 340.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/9ab59e6a2b12536ceaf1a4b920b03ecc.jpg" alt="Carrot Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Carrot Powder</h3>
+                        <p class="product-price">LKR 75.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/108191a65cbbb8a8d3fd7ccd381b2df6.jpg" alt="Coconut Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coconut Oil</h3>
+                        <p class="product-price">LKR 97.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card" style="opacity: 1; transform: translateY(0px);">
+                    <div class="product-image">
+                        <img src="./Products _files/0c3bf98fdc0cb84ca653db6bf321a565.jpg" alt="Neem Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Neem Powder</h3>
+                        <p class="product-price">LKR 160.00</p><p id="qu"> (100g)</p>
+                        <a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HavenCare</h3>
+                    <p>Your trusted partner in Skincare hacks with organic ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/index.html">Home</a></li>
+                        <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/diy-recipes.html">DIY Recipes</a></li>
+                         <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/products.html">Products</a></li>
+                        <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/about.html">About</a></li>
+                        <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/login.html">Login</a></li>
+                        <li><a href="file:///C:/Users/dhana/Downloads/CS_Project-main/CS_Project-main/register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: havencare@gmail.com</p>
+                    <p>Phone: +94 23 7689 425</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Havencare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Products _files/script.js"></script>
+
+
+</body></html>

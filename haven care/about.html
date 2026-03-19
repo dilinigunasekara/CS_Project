@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HavenCare</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+.fade-in{
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.slide-left{
+    animation: slideLeft 1.2s ease forwards;
+}
+
+.slide-right{
+    animation: slideRight 1.2s ease forwards;
+}
+
+.zoom-in{
+    animation: zoomIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform: translateX(-60px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity:0;
+        transform: translateX(60px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.benefit-item{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:all 0.4s ease;
+}
+
+.benefit-item:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.benefit-icon{
+    font-size:40px;
+    margin-bottom:10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+.page-header2{
+    background-image: url("https://i.pinimg.com/1200x/a7/98/dd/a798dd0d5840d6402ad0094cf0d8121f.jpg");
+    color:white;
+    text-align:center;
+    padding:80px 0;
+    animation: fadeIn 1.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: width 300px; 
+    opacity: 0.8;
+}
+
+.page-header2 h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+      </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html">HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                     <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                          <ul class="dropdown-menu">
+                            <li><a href="body.html">Body</a></li>
+                            <li><a href="hair.html">Hair</a></li>
+                            <li><a href="face.html">Face</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                            <li><a href="oil.html">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                          </ul>
+                    </li>
+                     <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header2 fade-in">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and values</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="page-content">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="slide-left">Mission</h2>
+                   <p class="fade-in" size="4"> <b>
+                  Our mission is to provide a trusted platform that educates our visitors about home-based natural beauty practices while
+                   offering a reliable store to purchase pure, high-quality ingredients with confidence.
+
+                   <br><br>
+               
+                  We found an issue that people lack with the knowledge and trust that they 
+can enhance their beauty with natural ingredients at home.So we built this website to 
+overcome this challenge and rebuild the trust. The  uniqueness of ours is having a content with 
+ beauty tips plus an online store to buy pure ingredients</b>
+                </p><br><br>
+                
+                <h2 class="slide-right">Our Values</h2>
+                <div class="benefits-grid" style="margin-top: 2rem;">
+                   <div class= "benefit-item ">
+                <div class="benefit-icon">🌿</div>
+                <h3>Natural Beauty Hacks</h3>
+                <p>Discover simple and effective beauty hacks made from natural ingredients that help you care for your skin and hair at home.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💚</div>
+                        <h3>Sustainability</h3>
+                        <p>We're committed to sustainable practices and protecting our planet for future generations.</p>
+                    </div>
+                    <div class="benefit-item">
+                <div class="benefit-icon">🍃</div>
+                <h3>Organic Ingredients Store</h3>
+                <p>Shop high-quality organic ingredients such as oils, herbs, and natural powders to create your own DIY beauty products.</p>
+            </div>
+                    <div class="benefit-item">
+                <div class="benefit-icon">✨</div>
+                <h3>Safe & Chemical Free</h3>
+                <p>Our recipes focus on natural and chemical-free solutions that are gentle on your skin and promote healthy beauty.</p>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HavenCare</h3>
+                    <p>Your trusted partner in Skincare hacks with organic ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                         <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: havencare@gmail.com</p>
+                    <p>Phone: +94 23 7689 425</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Havencare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

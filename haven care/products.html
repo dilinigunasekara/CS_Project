@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - HavenCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .page-header{
+    padding:120px 20px 80px 20px;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),
+    url("https://i.pinimg.com/1200x/3d/83/e1/3d83e10935b72afaab67dfbfc4050ee7.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.page-header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    animation:fadeDown 1s ease;
+    color: #f3f7f8;
+}
+
+.page-header p{
+    font-size:1.2rem;
+    max-width:600px;
+    margin:auto;
+    animation:fadeUp 1.2s ease;
+    color: #ffffff;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+    transform:translateY(20px);
+    opacity:0;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.product-image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.product-image{
+overflow:hidden;
+}
+
+.product-image img{
+transition:0.5s;
+}
+
+.product-card:hover img{
+transform:scale(1.1);
+}
+    </style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                     <a href="index.html"><img src="pictures/logo.png" alt="logo" height="70" width="80" ></a>
+                    <a href="index.html"> HavenCare</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li class="dropdown">
+                   <a href="diy-recipes.html">DIY Recipes ▾</a>
+
+                         <ul class="dropdown-menu">
+                            <li><a href="diy-recipes.html?category=body">Body</a></li>
+                            <li><a href="diy-recipes.html?category=hair">Hair</a></li>
+                            <li><a href="diy-recipes.html?category=face">Face</a></li>
+                            <li><a href="diy-recipes.html?category=drinks">Drinks</a></li>
+                            <li><a href="diy-recipes.html?category=oils">Oils</a></li>
+                            <li><a href="diy-recipes.html">All</a></li>
+                        </ul>
+                   </li>
+                     <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="register-btn">Login</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>Discover our complete range of premium natural ingredients for your beauty care</p>
+    </div>
+</section>
+
+    <!-- Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/20/a5/c0/20a5c092ffee26d96eeae72a4290866c.jpg" alt="Red Sandalwood">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Sandalwood Powder</h3>
+                        <p class="product-price">LKR 49.99 <sub>100g</sub></p>
+                        <a href="redSandalwood.html" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/5a/6b/9a/5a6b9a5d26a22f8078b974967a6aae10.jpg" alt="Kasthuri Manjal Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kasthuri Manjal Powder</h3>
+                        <p class="product-price">LKR 39.99<sub>100g</sub></p>
+                        <a href="kasthuri.html" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/b6/22/f6/b622f6334a48a026f3a70a623599ef8f.jpg" alt="Gram Flour">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gram Flour</h3>
+                        <p class="product-price">LKR 59.99<sub>100g</sub></p>
+                        <a href="gramFlour.html" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/d8/ff/ab/d8ffabfc6f50398c8f14250a3b435e2d.jpg" alt="Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3>Honey</h3>
+                        <p class="product-price">LKR 179.99<sub>100ml</sub></p>
+                        <a href="#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/2d/83/1b/2d831bcc17c8054da92f67402069f139.jpg" alt="Aloe Gel">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aloe Gel</h3>
+                        <p class="product-price">LKR 339.99<sub>100g</sub></p>
+                        <a href="#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/b7/ba/7e/b7ba7ec4971dfcc9f7dc1099a254546e.jpg" alt="Carrot Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Carrot Powder</h3>
+                        <p class="product-price">LKR 74.99<sub>100g</sub></p>
+                        <a href="#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/db/9f/cf/db9fcf670e391cfb473fd705e3a25862.jpg" alt="Coconut Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coconut Oil</h3>
+                        <p class="product-price">LKR 96.99<sub>100ml</sub></p>
+                        <a href="#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/0c/3b/f9/0c3bf98fdc0cb84ca653db6bf321a565.jpg" alt="Neem Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Neem Powder</h3>
+                        <p class="product-price">LKR 159.99</p><p id="qu"> (100g)</p>
+                        <a href="#" class="btn btn-small">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HavenCare</h3>
+                    <p>Your trusted partner in Skincare hacks with organic ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="diy-recipes.html">DIY Recipes</a></li>
+                         <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: havencare@gmail.com</p>
+                    <p>Phone: +94 23 7689 425</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Havencare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
